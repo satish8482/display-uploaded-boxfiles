@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Box Content Explorer Demo</title>
+
+    <!-- polyfill.io only loads the polyfills your browser needs -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Intl"></script>
+
+    <!-- Latest version of the explorer css for your locale -->
+    <link rel="stylesheet" href="https://cdn01.boxcdn.net/platform/elements/1.6.0/en-US/explorer.css" />
+</head>
+<body>
+    <div class="container" style="height:600px"></div>
+    <!-- Latest version of the explorer js for your locale -->
+    <script src="https://cdn01.boxcdn.net/platform/elements/1.6.0/en-US/explorer.js"></script>
+    <script>
+      	//var folderId = '42697001176';
+          //var accessToken = 'a1tEvdzhbV74imTSGjEtfzuD8A18LRJs';
+          var folderId = '42705020628';
+          var accessToken = 'derpkyBHRLwt108outlAKntw0FeWgWAh';
+      	var contentExplorer = new Box.ContentExplorer();
+      	contentExplorer.show(folderId, accessToken, {
+            container: '.container'
+        });
+    </script>
+</body>
+</html>
